@@ -5,19 +5,64 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Page HTML avec Button Centré</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-image: url("Capture2.PNG");
+      background-size: cover;
+      backdrop-filter: blur(8px);
+    }
+
+    .content {
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+.google-logo .g {
+      color: #4285F4;
+    }
+
+    .google-logo .o1 {
+      color: #DB4437;
+    }
+
+    .google-logo .o2 {
+      color: #F4B400;
+    }
+
+    .google-logo .g2 {
+      color: #4285F4;
+    }
+
+    .google-logo .l {
+      color: #0F9D58;
+    }
+
+    .google-logo .e {
+      color: #DB4437;
+    }
+  </style>
 </head>
 <body class="flex flex-col items-center justify-center h-screen">
-  <div >
+  <div class="content">
     <h3 class="text-xl font-bold mb-4">𝖧𝖺𝗂𝗋 𝖢𝗈𝗂𝖿𝖿 𝖽𝖾 𝖫𝗂𝗅𝗅𝖾</h3>
     <p class="text-lg mb-8">Réservez dès maintenant votre rendez-vous</p>
-    <a href="https://youpi.setmore.com/" class="px-8 py-4 bg-blue-500 text-white rounded text-lg font-semibold shadow-md hover:bg-blue-600">Prendre mon RDV</a>
-  </div>
-  
+    
+  <a href="https://youpi.setmore.com/" class="px-8 py-4 bg-blue-500 text-white rounded text-lg font-semibold shadow-md hover:bg-blue-600">Prendre mon RDV</a>
+ <a href="https://www.google.com/search?q=hair+coiff+lille&rlz=1C1GCEA_enFR1023FR1023&oq=hair+coiff+lille+&aqs=chrome..69i57j69i60l3.3314j0j1&sourceid=chrome&ie=UTF-8#lrd=0x47c2d59b76905555:0xccc476ba9afe2f9d,1,,,," class="google-logo">
+<span class="text-blue">Laisser un avis</span>    
+<span class="g">G</span>
+    <span class="o1">o</span>
+    <span class="o2">o</span>
+    <span class="g2">g</span>
+    <span class="l">l</span>
+    <span class="e">e</span>
+  </a>
   <footer class="text-center text-gray-500 mt-8">
     <p class="text-sm">&copy; Tous les droits sont réservés</p>
     <p class="text-sm" id="currentYear"></p>
   </footer>
-
+ </div>
   <script>
     const currentYear = new Date().getFullYear();
     document.getElementById("currentYear").textContent = currentYear;
