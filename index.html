@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page HTML avec Button Centré</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="flex flex-col items-center justify-center h-screen">
+  <div >
+    <h3 class="text-xl font-bold mb-4">𝖧𝖺𝗂𝗋 𝖢𝗈𝗂𝖿𝖿 𝖽𝖾 𝖫𝗂𝗅𝗅𝖾</h3>
+    <p class="text-lg mb-8">Réservez dès maintenant votre rendez-vous</p>
+    <a href="https://youpi.setmore.com/" class="px-8 py-4 bg-blue-500 text-white rounded text-lg font-semibold shadow-md hover:bg-blue-600">Prendre mon RDV</a>
+  </div>
+  
+  <footer class="text-center text-gray-500 mt-8">
+    <p class="text-sm">&copy; Tous les droits sont réservés</p>
+    <p class="text-sm" id="currentYear"></p>
+  </footer>
+
+  <script>
+    const currentYear = new Date().getFullYear();
+    document.getElementById("currentYear").textContent = currentYear;
+  </script>
+</body>
+</html>
