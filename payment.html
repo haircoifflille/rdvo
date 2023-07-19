@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Page de Paiement</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@1.10.0/dist/full.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mx-auto p-6">
+        <h1 class="text-3xl font-bold mb-6">Caisse en ligne -HAIR COIFF </h1> 
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"> 
+        <div id="montantModifiable" class="bg-white rounded-lg shadow-md">
+                <div class="p-4">
+                    <img src="https://api.qrserver.com/v1/create-qr-code/?data=https%3A%2F%2Fbuy.stripe.com%2FaEU2bh7fw0Rp6kM28i&size=150x150" alt="QR Code" class="w-32 h-32 mx-auto mb-4">
+                    <h2 class="text-lg font-bold mb-2">Montant: Modifiable</h2>
+                    <button onclick="copierLien('https://buy.stripe.com/aEU2bh7fw0Rp6kM28i', 'btnCopierModifiable')" id="btnCopierModifiable" class="btn btn-primary mb-2">
+                        Copier le Lien
+                    </button>
+                    <a href="https://buy.stripe.com/aEU2bh7fw0Rp6kM28i" target="_blank" class="btn btn-primary">Payer ici</a>
+                </div>
+            </div>
+            <div id="montant3" class="bg-white rounded-lg shadow-md">
+                <div class="p-4">
+                    <img src="https://api.qrserver.com/v1/create-qr-code/?data=https%3A%2F%2Fbuy.stripe.com%2F3csg27bvM9nV24w7sw&size=150x150" alt="QR Code" class="w-32 h-32 mx-auto mb-4">
+                    <h2 class="text-lg font-bold mb-2">Montant: 3 euros</h2>
+                    <button onclick="copierLien('https://buy.stripe.com/3csg27bvM9nV24w7sw', 'btnCopier3')" id="btnCopier3" class="btn btn-primary mb-2">
+                        Copier le Lien
+                    </button>
+                    <a href="https://buy.stripe.com/3csg27bvM9nV24w7sw" target="_blank" class="btn btn-primary">Payer ici</a>
+                </div>
+            </div>
+            <div id="montant5" class="bg-white rounded-lg shadow-md">
+                <div class="p-4">
+                    <img src="https://api.qrserver.com/v1/create-qr-code/?data=https%3A%2F%2Fbuy.stripe.com%2F8wMbLR2ZggQn24weUX&size=150x150" alt="QR Code" class="w-32 h-32 mx-auto mb-4">
+                    <h2 class="text-lg font-bold mb-2">Montant: 5 euros</h2>
+                    <button onclick="copierLien('https://buy.stripe.com/8wMbLR2ZggQn24weUX', 'btnCopier5')" id="btnCopier5" class="btn btn-primary mb-2">
+                        Copier le Lien
+                    </button>
+                    <a href="https://buy.stripe.com/8wMbLR2ZggQn24weUX" target="_blank" class="btn btn-primary">Payer ici</a>
+                </div>
+            </div>
+            <div id="montant8" class="bg-white rounded-lg shadow-md">
+                <div class="p-4">
+                    <img src="https://api.qrserver.com/v1/create-qr-code/?data=https%3A%2F%2Fbuy.stripe.com%2F6oEeY343keIfdNe4gl&size=150x150" alt="QR Code" class="w-32 h-32 mx-auto mb-4">
+                    <h2 class="text-lg font-bold mb-2">Montant: 8 euros</h2>
+                    <button onclick="copierLien('https://buy.stripe.com/6oEeY343keIfdNe4gl', 'btnCopier8')" id="btnCopier8" class="btn btn-primary mb-2">
+                        Copier le Lien
+                    </button>
+                    <a href="https://buy.stripe.com/6oEeY343keIfdNe4gl" target="_blank" class="btn btn-primary">Payer ici</a>
+                </div>
+            </div>
+            <div id="montant10" class="bg-white rounded-lg shadow-md">
+                <div class="p-4">
+                    <img src="https://api.qrserver.com/v1/create-qr-code/?data=https%3A%2F%2Fbuy.stripe.com%2F28o17dgQ60Rp24wbIK&size=150x150" alt="QR Code" class="w-32 h-32 mx-auto mb-4">
+                    <h2 class="text-lg font-bold mb-2">Montant: 10 euros</h2>
+                    <button onclick="copierLien('https://buy.stripe.com/28o17dgQ60Rp24wbIK', 'btnCopier10')" id="btnCopier10" class="btn btn-primary mb-2">
+                        Copier le Lien
+                    </button>
+                    <a href="https://buy.stripe.com/28o17dgQ60Rp24wbIK" target="_blank" class="btn btn-primary">Payer ici</a>
+                </div>
+            </div>
+            <div id="montant13" class="bg-white rounded-lg shadow-md">
+                <div class="p-4">
+                    <img src="https://api.qrserver.com/v1/create-qr-code/?data=https%3A%2F%2Fbuy.stripe.com%2FaEU2bh7fw0Rp6kM28i&size=150x150" alt="QR Code" class="w-32 h-32 mx-auto mb-4">
+                    <h2 class="text-lg font-bold mb-2">Montant: 13 euros</h2>
+                    <button onclick="copierLien('https://buy.stripe.com/aEU2bh7fw0Rp6kM28i', 'btnCopier13')" id="btnCopier13" class="btn btn-primary mb-2">
+                        Copier le Lien
+                    </button>
+                    <a href="https://buy.stripe.com/aEU2bh7fw0Rp6kM28i" target="_blank" class="btn btn-primary">Payer ici</a>
+                </div>
+            </div>
+            <div id="montant15" class="bg-white rounded-lg shadow-md">
+                <div class="p-4">
+                    <img src="https://api.qrserver.com/v1/create-qr-code/?data=https%3A%2F%2Fbuy.stripe.com%2F8wM6rxbvM57FcJa00b&size=150x150" alt="QR Code" class="w-32 h-32 mx-auto mb-4">
+                    <h2 class="text-lg font-bold mb-2">Montant: 15 euros</h2>
+                    <button onclick="copierLien('https://buy.stripe.com/8wM6rxbvM57FcJa00b', 'btnCopier15')" id="btnCopier15" class="btn btn-primary mb-2">
+                        Copier le Lien
+                    </button>
+                    <a href="https://buy.stripe.com/8wM6rxbvM57FcJa00b" target="_blank" class="btn btn-primary">Payer ici</a>
+                </div>
+            </div>
+            <div id="montant18" class="bg-white rounded-lg shadow-md">
+                <div class="p-4">
+                    <img src="https://api.qrserver.com/v1/create-qr-code/?data=https%3A%2F%2Fbuy.stripe.com%2FaEUbLRbvM57FfVmcMY&size=150x150" alt="QR Code" class="w-32 h-32 mx-auto mb-4">
+                    <h2 class="text-lg font-bold mb-2">Montant: 18 euros</h2>
+                    <button onclick="copierLien('https://buy.stripe.com/aEUbLRbvM57FfVmcMY', 'btnCopier18')" id="btnCopier18" class="btn btn-primary mb-2">
+                        Copier le Lien
+                    </button>
+                    <a href="https://buy.stripe.com/aEUbLRbvM57FfVmcMY" target="_blank" class="btn btn-primary">Payer ici</a>
+                </div>
+            </div>
+            <div id="montant20" class="bg-white rounded-lg shadow-md">
+                <div class="p-4">
+                    <img src="https://api.qrserver.com/v1/create-qr-code/?data=https%3A%2F%2Fbuy.stripe.com%2FdR68zF9nEcA76kM7st&size=150x150" alt="QR Code" class="w-32 h-32 mx-auto mb-4">
+                    <h2 class="text-lg font-bold mb-2">Montant: 20 euros</h2>
+                    <button onclick="copierLien('https://buy.stripe.com/dR68zF9nEcA76kM7st', 'btnCopier20')" id="btnCopier20" class="btn btn-primary mb-2">
+                        Copier le Lien
+                    </button>
+                    <a href="https://buy.stripe.com/dR68zF9nEcA76kM7st" target="_blank" class="btn btn-primary">Payer ici</a>
+                </div>
+            </div>
+            <div id="montant25" class="bg-white rounded-lg shadow-md">
+                <div class="p-4">
+                    <img src="https://api.qrserver.com/v1/create-qr-code/?data=https%3A%2F%2Fbuy.stripe.com%2F5kAeY343kfMjeRi9AH&size=150x150" alt="QR Code" class="w-32 h-32 mx-auto mb-4">
+                    <h2 class="text-lg font-bold mb-2">Montant: 25 euros</h2>
+                    <button onclick="copierLien('https://buy.stripe.com/5kAeY343kfMjeRi9AH', 'btnCopier25')" id="btnCopier25" class="btn btn-primary mb-2">
+                        Copier le Lien
+                    </button>
+                    <a href="https://buy.stripe.com/5kAeY343kfMjeRi9AH" target="_blank" class="btn btn-primary">Payer ici</a>
+                </div>
+            </div>
+            <div id="montant30" class="bg-white rounded-lg shadow-md">
+                <div class="p-4">
+                    <img src="https://api.qrserver.com/v1/create-qr-code/?data=https%3A%2F%2Fbuy.stripe.com%2F14k039fM2arZcJa9AI&size=150x150" alt="QR Code" class="w-32 h-32 mx-auto mb-4">
+                    <h2 class="text-lg font-bold mb-2">Montant: 30 euros</h2>
+                    <button onclick="copierLien('https://buy.stripe.com/14k039fM2arZcJa9AI', 'btnCopier30')" id="btnCopier30" class="btn btn-primary mb-2">
+                        Copier le Lien
+                    </button>
+                    <a href="https://buy.stripe.com/14k039fM2arZcJa9AI" target="_blank" class="btn btn-primary">Payer ici</a>
+                </div>
+            </div>
+            <div id="montant40" class="bg-white rounded-lg shadow-md">
+                <div class="p-4">
+                    <img src="https://api.qrserver.com/v1/create-qr-code/?data=https%3A%2F%2Fbuy.stripe.com%2F7sI7vBbvMbw338A9AJ&size=150x150" alt="QR Code" class="w-32 h-32 mx-auto mb-4">
+                    <h2 class="text-lg font-bold mb-2">Montant: 40 euros</h2>
+                    <button onclick="copierLien('https://buy.stripe.com/7sI7vBbvMbw338A9AJ', 'btnCopier40')" id="btnCopier40" class="btn btn-primary mb-2">
+                        Copier le Lien
+                    </button>
+                    <a href="https://buy.stripe.com/7sI7vBbvMbw338A9AJ" target="_blank" class="btn btn-primary">Payer ici</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function copierLien(lien, btnId) {
+            var tempInput = document.createElement('input');
+            tempInput.value = lien;
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            document.execCommand('copy');
+            document.body.removeChild(tempInput);
+
+            // Réinitialisation des boutons précédents
+            var previousBtnCopier = document.querySelector('.btn-success');
+            if (previousBtnCopier) {
+                previousBtnCopier.innerHTML = 'Copier le Lien';
+                previousBtnCopier.classList.remove('btn-success');
+                previousBtnCopier.classList.add('btn-primary');
+            }
+
+            var btnCopier = document.getElementById(btnId);
+            btnCopier.innerHTML = 'Copié ✔️';
+            btnCopier.classList.remove('btn-primary');
+            btnCopier.classList.add('btn-success');
+        }
+    </script>
+</body>
+</html>
